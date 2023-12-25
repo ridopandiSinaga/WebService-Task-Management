@@ -26,7 +26,7 @@ For running this project please install nodejs and mysql.
 Clone the repository :
 
 ```
-git clone https://github.com/elfinsanjaya12/express-todo-list.git
+git clone https://github.com/ridopandiSinaga/Backend-Task-Management.git
 ```
 
 Switch to the repo folder :
@@ -53,6 +53,12 @@ Set configuration database like on your environtment system,to the config file o
   },
 ```
 
+Run the migrations:
+
+```
+npx sequelize-cli db:migrate
+```
+
 Run the server :
 
 ```
@@ -61,6 +67,4 @@ npm run start
 
 You can now access the server at http://localhost:3000
 
-## Link API
-
-- [x] https://documenter.getpostman.com/view/2945224/UUy39mLM
+Use Base_URL for API config: 'http://your_IPv4_Address.:3000/api/v1/'
