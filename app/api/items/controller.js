@@ -1,4 +1,4 @@
-const { Todo, Item } = require('../../db/models');
+const { Todo, Item,sequelize } = require('../../db/models');
 
 module.exports = {
   create: async (req, res, next) => {
