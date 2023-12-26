@@ -5,7 +5,7 @@ const { validateCreate, validateUpdate, validateOne, validateDelete } = require(
 const router = Router()
 
 router.get(`/`, getAll)
-router.get('/search?:keywords', getSearch)
+router.get('/search', getSearch)
 router.post(`/`, validateCreate, create)
 router.get(`/:id`, validateOne, getOne)
 router.put(`/:id`, validateUpdate, update)
