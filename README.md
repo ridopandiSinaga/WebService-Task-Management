@@ -15,7 +15,6 @@
 
 - [x] CRUD Todos
 - [x] CRUD Items
-- [x] Move Item
 
 ## Requirement
 
@@ -53,7 +52,13 @@ Set configuration database like on your environtment system,to the config file o
   },
 ```
 
-Run the migrations:
+Build database:
+
+```
+npx sequelize-cli db:create
+```
+
+Build the table:
 
 ```
 npx sequelize-cli db:migrate
@@ -66,5 +71,3 @@ npm run start
 ```
 
 You can now access the server at http://localhost:3000
-
-Use Base_URL for API config: 'http://your_IPv4_Address.:3000/api/v1/'
